@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css" crossorigin="anonymous">
+
+    <title>Cocteles App!</title>
+</head>
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-opacity-50">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Dry Martini</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="">
+                    <a class="nav-link" href="#">Ingresar</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!--Carrusel-->
+
+<div class="video-container">
+  <video id="bgvid" src="https://vod-progressive.akamaized.net/exp=1632339836~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2534%2F13%2F337674794%2F1340198872.mp4~hmac=48ceb5e06c762f5e07bd44ca117c11e83a7246d2f6f359710e1baeefee262c81/vimeo-prod-skyfire-std-us/01/2534/13/337674794/1340198872.mp4?filename=Cocktail+-+23841.mp4" autoplay loop muted playsinline>
+  </video>
+  <div class="content d-flex align-items-center">
+    <div class="container containerForm d-flex justify-content-center">
+      <div class="card login-form" style="width: 18rem;">
+        <div class="card-body">
+          <h2 class="card-title text-center">Inicia sesion</h2>
+          <div class="card-text">
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control form-control-sm" id="email"/>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control form-control-sm" id="password"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+        </div>
+
+        <div class="registro">No tienes una cuenta? <a href="#">Registrate aqui!</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

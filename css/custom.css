@@ -1,0 +1,83 @@
+.video-container{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-container video{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background: rgba(0,0,0,0.5);
+}
+
+.video-container .content{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-container .content h1{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.video-container .content h3{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.formulario{
+    background: rgba(0,0,0,.5);
+    padding: 50px;
+}
+
+.video-container .containerForm{
+    height: 100%;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container .form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    border:none;
+    margin: 0;
+}
+
+.video-container .login-form{
+    height: 280px;
+    margin: 10px;
+    opacity: 75%;
+}
+
+.btn{
+    font-size: 15px;
+    transform: translateY(-10px);
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    left: 15px;
+}
