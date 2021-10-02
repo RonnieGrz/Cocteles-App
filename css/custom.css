@@ -59,6 +59,29 @@
 
 }
 
+.container .content .titulo{
+    padding-top: 300px;
+}
+
+.container .content .cards{
+    padding-top: 200px;
+}
+
+.video-container .containerForm{
+    height: 100%;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container .form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
 input[type="email"]:focus,
 input[type="password"]:focus{
     outline: none;
@@ -154,28 +177,9 @@ input[type="password"]:focus{
     opacity: 0.6;
 }
 
-.login-form .social-icons{
-    margin-top: 30px;
-    margin-bottom: 16px;
-}
 
-.login-form .social-icons a{
-    font-size: 23px;
-    margin: 0 3px;
+.navbar-brand{
     color: #78c2ad;
-    border: 1px solid;
-    border-radius: 50%;
-    width: 45px;
-    display: inline-block;
-    height: 45px;
-    text-align: center;
-    background-color: #fff;
-    line-height: 45px;
-}
-
-.login-form .social-icons a:hover{
-    text-decoration: none;
-    opacity: 0.6;
 }
 
 .navbar-brand{
@@ -193,15 +197,59 @@ input[type="password"]:focus{
 .nav-link:hover{
     color: #ffffff;
 }
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
 
-/* @media (max-width: 576px) {
-    .login-form form{
-        padding: 50px 20px;
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.btn-primary{
+    background-color: #78c2ad;
+}
+
+.btn-primary:hover{
+    background-color: #78c2ad;
+}
+
+#videoBG{
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG{
+        width: 100%;
+        height: auto;
     }
-    .login-form .form-name{
-        width: 70px;
-        height: 70px;
-        font-size: 30px;
-        line-height: 70px;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG{
+        width: auto;
+        height: 100%;
     }
-} */
+    body{
+        background-size: cover;
+    }
+}

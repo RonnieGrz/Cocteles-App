@@ -16,7 +16,12 @@
 <!--navbar-->
 <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Dry Martini</a>
+        <a class="navbar-brand" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+            </svg>
+            Dry Martini
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,35 +40,34 @@
 <!--Carrusel-->
 
 <div class="video-container">
-  <video id="bgvid" src="https://vod-progressive.akamaized.net/exp=1632372787~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2534%2F13%2F337674794%2F1340198872.mp4~hmac=5527398598a1d594bf9242826b22f12157b95ae25a17a9756bad5a917ec5697d/vimeo-prod-skyfire-std-us/01/2534/13/337674794/1340198872.mp4?filename=Cocktail+-+23841.mp4" autoplay loop muted playsinline>
-  </video>
-  <div class="content d-flex align-items-center">
-    <div class="container containerForm d-flex justify-content-center">
-        <div class="login-form">
-            <form action="#">
-                <div class="form-name">
-                    <span>Inicia sesion</i></span>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control item" id="username" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control item" id="password" placeholder="Contraseña">
-                </div>
-                <div class="form-group">
-                    <button type="button" class="btn btn-block login-account">Ingresar</button>
-                </div>
-                <div class="form-group">
-                    <a href="#">Si aun no tienes cuenta Registrate Aqui</a>
-                </div>
-            </form>
+    <video id="bgvid" src="https://pixabay.com/es/videos/download/video-23841_large.mp4" autoplay loop muted
+           playsinline>
+    </video>
+    <div class="content d-flex align-items-center">
+        <div class="container ">
+            <main class="form-signin">
+                <form>
+                    <h1 class="h3 mb-3 fw-normal">Inicia sesion</h1>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput">
+                        <label for="floatingInput">Correo electronico</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword">
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label class="text-white">
+                            <input type="checkbox" value="remember-me"> Recuerdame
+                        </label>
+                    </div>
+                    <button onclick="window.location.href = 'listadoClientes.html'" class="w-100 btn btn-lg btn-primary signIn" type="submit">Ingresar</button>
+                </form>
+            </main>
         </div>
     </div>
-  </div>
-</div>
 
 
-
-<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
